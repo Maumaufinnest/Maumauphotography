@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Static Photography Studio</title>
+  <title>Mauamau Photography Studio</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
   <!-- NAVBAR -->
   <nav>
-    <div class="logo">STATIC STUDIO</div>
+    <div class="logo">MAUMAU STUDIO</div>
 
     <ul id="menu">
       <li><a href="#services">SERVICES</a></li>
@@ -35,6 +35,91 @@
         fashion editorials, food photography & still life.
       </p>
       <button class="btn" onclick="bookAlert()">BOOK SESSION</button>
+      <style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .booking-box {
+    display: none;
+    width: 320px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f4f4f4;
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  select, input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Book Session Button -->
+<button onclick="openBooking()">Book Session</button>
+
+<!-- Booking Section -->
+<div class="booking-box" id="bookingBox">
+
+  <h3>Select Date & Time</h3>
+
+  <!-- Date Picker -->
+  <label>Date</label>
+  <input type="date" id="date" onchange="loadTimes()" required>
+
+  <!-- Time Slots -->
+  <label>Available Time</label>
+  <select id="time">
+    <option>Select date first</option>
+  </select>
+
+</div>
+
+<script>
+  function openBooking() {
+    document.getElementById("bookingBox").style.display = "block";
+
+    // Prevent past dates
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById("date").setAttribute("min", today);
+  }
+
+  function loadTimes() {
+    const timeSelect = document.getElementById("time");
+    timeSelect.innerHTML = "";
+
+    // Example available time slots
+    const times = [
+      "09:00 AM",
+      "11:00 AM",
+      "02:00 PM",
+      "04:00 PM"
+    ];
+
+    times.forEach(time => {
+      const option = document.createElement("option");
+      option.text = time;
+      option.value = time;
+      timeSelect.add(option);
+    });
+  }
+</script>
+
+</body>
+</html>
     </div>
   </section>
 
@@ -59,17 +144,28 @@
       <img src="https://picsum.photos/400?2">
       <img src="https://picsum.photos/400?3">
       <img src="https://picsum.photos/400?4">
+      <img src="c:\Users\magor\Downloads\Screenshot 2026-02-07 135125.png">
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email: bookings@staticstudio.com</p>
-  </section>
+  <div class="contact-info">
+  <h2>Contact Us</h2>
+
+  <p>
+    📞 Phone:
+    <a href="tel:+254706398452">+254 706 398 452</a>
+  </p>
+
+  <p>
+    ✉️ Email:
+    <a href="mailto:info@example.com">magorejoel2000@gmail.com</a>
+  </p>
+</div>
+
 
   <footer>
-    © 2026 Static Photography Studio
+    © 2026 Maumau Photography Studio
   </footer>
 
   <!-- JS Link -->
