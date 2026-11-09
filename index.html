@@ -1,174 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mauamau Photography Studio</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="Maumau Photography Studio — refined product, portrait, fashion and food photography in Nairobi, Kenya.">
+  <title>Maumau Photography Studio | Photography with Purpose</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Maumau Studio home">
+        <span class="brand-mark">M</span>
+        <span class="brand-name">MAUMAU <small>PHOTOGRAPHY STUDIO</small></span>
+      </a>
+      <button class="menu-toggle" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="#booking">Book a session <span>↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">MAUMAU STUDIO</div>
+  <main>
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Photographer working with a professional camera"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content container">
+        <p class="eyebrow"><span></span> MAUMAU PHOTOGRAPHY STUDIO · NAIROBI</p>
+        <h1>Every frame tells<br><em>a better story.</em></h1>
+        <p class="hero-copy">Thoughtful photography for people, brands and moments worth remembering. Crafted with precision. Made to last.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#work">Explore our work <span>↗</span></a>
+          <a class="text-link" href="#booking">Book a session <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>PORTRAITS · PRODUCTS · LIFESTYLE · EVENTS</span></div>
+      </div>
+      <div class="hero-index">01 <span>/</span> 04</div>
+    </section>
 
-    <ul id="menu">
-      <li><a href="#services">SERVICES</a></li>
-      <li><a href="#work">WORK</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
+    <section class="intro section-pad" id="about">
+      <div class="container intro-grid">
+        <p class="eyebrow dark-eyebrow">THE STUDIO</p>
+        <div>
+          <h2>Photography that makes<br>the ordinary <em>unforgettable.</em></h2>
+          <p class="intro-copy">At Maumau Photography Studio, we turn ideas, people and everyday details into compelling visual stories. From clean commercial images to expressive portraits, every shoot is approached with care and a clear creative vision.</p>
+          <a class="underlined-link" href="#contact">Get to know the studio <span>↗</span></a>
+        </div>
+        <div class="intro-stat"><strong>01</strong><span>One frame.<br>Endless possibilities.</span></div>
+      </div>
+    </section>
 
-    <button id="menuBtn">☰</button>
-  </nav>
+    <section class="services section-pad" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">WHAT WE DO</p><h2>Services with <em>intention.</em></h2></div>
+          <p>Carefully considered imagery, tailored to your brief and your story.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-number">01 / COMMERCIAL</div>
+            <div class="service-icon">✳</div>
+            <h3>Product Photography</h3>
+            <p>Beautiful, detailed product imagery that gives your brand a polished and consistent look.</p>
+            <a href="#booking" aria-label="Book product photography">Enquire <span>↗</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-number">02 / PEOPLE</div>
+            <div class="service-icon">◉</div>
+            <h3>Portraits & Headshots</h3>
+            <p>Natural, confident portraits for professionals, creatives, families and personal brands.</p>
+            <a href="#booking" aria-label="Book portrait photography">Enquire <span>↗</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-number">03 / EDITORIAL</div>
+            <div class="service-icon">✧</div>
+            <h3>Fashion & Editorial</h3>
+            <p>Expressive concepts, considered styling and striking images with a distinct point of view.</p>
+            <a href="#booking" aria-label="Book fashion photography">Enquire <span>↗</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-number">04 / HOSPITALITY</div>
+            <div class="service-icon">◇</div>
+            <h3>Food & Lifestyle</h3>
+            <p>Warm, inviting photography for menus, restaurants, hospitality and lifestyle brands.</p>
+            <a href="#booking" aria-label="Book food photography">Enquire <span>↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div>
-      <h1>Precision Still Imagery</h1>
-      <p>
-        Luxury product photography, corporate headshots,
-        fashion editorials, food photography & still life.
-      </p>
-      <button class="btn" onclick="bookAlert()">BOOK SESSION</button>
-      <style>
-  body {
-    font-family: Arial, sans-serif;
-  }
+    <section class="portfolio section-pad" id="work">
+      <div class="container">
+        <div class="section-heading portfolio-heading">
+          <div><p class="eyebrow">A FEW FAVOURITE FRAMES</p><h2>Selected <em>work.</em></h2></div>
+          <p>A glimpse into the stories we love to tell.</p>
+        </div>
+        <div class="portfolio-grid">
+          <figure class="work-item work-tall">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1100&q=85" alt="Editorial portrait of a woman" loading="lazy">
+            <figcaption><span>01 / PORTRAITS</span><strong>Quiet confidence</strong></figcaption>
+          </figure>
+          <figure class="work-item">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85" alt="Red sneaker product photograph" loading="lazy">
+            <figcaption><span>02 / PRODUCT</span><strong>Details that speak</strong></figcaption>
+          </figure>
+          <figure class="work-item">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85" alt="Fashion editorial clothing photograph" loading="lazy">
+            <figcaption><span>03 / FASHION</span><strong>Style in motion</strong></figcaption>
+          </figure>
+          <figure class="work-item work-wide">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1300&q=85" alt="Carefully styled food photography" loading="lazy">
+            <figcaption><span>04 / FOOD & LIFESTYLE</span><strong>A feast for the eyes</strong></figcaption>
+          </figure>
+        </div>
+        <p class="portfolio-note">Portfolio imagery is illustrative. Replace these sample photographs with your own client work before publishing.</p>
+      </div>
+    </section>
 
-  .booking-box {
-    display: none;
-    width: 320px;
-    padding: 20px;
-    border-radius: 8px;
-    background: #f4f4f4;
-    margin-top: 20px;
-  }
+    <section class="booking section-pad" id="booking">
+      <div class="container booking-grid">
+        <div class="booking-copy">
+          <p class="eyebrow">LET'S CREATE SOMETHING</p>
+          <h2>Your story deserves<br><em>the right frame.</em></h2>
+          <p>Have a project in mind or need a photographer for a special moment? Send a session request and we'll get back to you.</p>
+          <div class="booking-contact"><span>DIRECT ENQUIRIES</span><a href="tel:+254706398452">+254 706 398 452</a><a href="mailto:magorejoel2000@gmail.com">magorejoel2000@gmail.com</a></div>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="form-heading"><span>SESSION REQUEST</span><span>01 — 05</span></div>
+          <div class="form-row">
+            <label>Your name<input type="text" id="clientName" name="name" placeholder="Full name" required></label>
+            <label>Phone number<input type="tel" id="clientPhone" name="phone" placeholder="+254 ..." required></label>
+          </div>
+          <label>Email address <span class="optional">(optional)</span><input type="email" id="clientEmail" name="email" placeholder="you@example.com"></label>
+          <label>What do you need?
+            <select id="serviceType" name="service" required>
+              <option value="">Choose a photography service</option>
+              <option>Product Photography</option>
+              <option>Portraits & Headshots</option>
+              <option>Fashion & Editorial</option>
+              <option>Food & Lifestyle</option>
+              <option>Event Photography</option>
+              <option>Other / Not sure yet</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>Preferred date<input type="date" id="sessionDate" name="date" required></label>
+            <label>Preferred time
+              <select id="sessionTime" name="time" required>
+                <option value="">Choose a time</option>
+                <option>Morning (9 AM – 12 PM)</option>
+                <option>Afternoon (12 PM – 3 PM)</option>
+                <option>Late afternoon (3 PM – 5 PM)</option>
+                <option>Flexible</option>
+              </select>
+            </label>
+          </div>
+          <label>Tell us a little about your project <span class="optional">(optional)</span><textarea id="clientMessage" name="message" rows="3" placeholder="Location, ideas, number of people or any details..."></textarea></label>
+          <button class="button button-gold submit-button" type="submit">Send booking request <span>↗</span></button>
+          <p class="form-footnote">This opens WhatsApp with your request ready to send. Your session is confirmed after we reply.</p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
 
-  button {
-    padding: 10px 15px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+    <section class="contact-strip" id="contact">
+      <div class="container contact-inner">
+        <div><p class="eyebrow">HAVE A QUESTION?</p><h2>Let's talk <em>photography.</em></h2></div>
+        <div class="contact-links"><a href="tel:+254706398452">+254 706 398 452</a><a href="mailto:magorejoel2000@gmail.com">magorejoel2000@gmail.com</a><a href="https://wa.me/254706398452" target="_blank" rel="noopener">WhatsApp us ↗</a></div>
+      </div>
+    </section>
+  </main>
 
-  select, input {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-  }
-</style>
-</head>
-
-<body>
-
-<!-- Book Session Button -->
-<button onclick="openBooking()">Book Session</button>
-
-<!-- Booking Section -->
-<div class="booking-box" id="bookingBox">
-
-  <h3>Select Date & Time</h3>
-
-  <!-- Date Picker -->
-  <label>Date</label>
-  <input type="date" id="date" onchange="loadTimes()" required>
-
-  <!-- Time Slots -->
-  <label>Available Time</label>
-  <select id="time">
-    <option>Select date first</option>
-  </select>
-
-</div>
-
-<script>
-  function openBooking() {
-    document.getElementById("bookingBox").style.display = "block";
-
-    // Prevent past dates
-    const today = new Date().toISOString().split('T')[0];
-    document.getElementById("date").setAttribute("min", today);
-  }
-
-  function loadTimes() {
-    const timeSelect = document.getElementById("time");
-    timeSelect.innerHTML = "";
-
-    // Example available time slots
-    const times = [
-      "09:00 AM",
-      "11:00 AM",
-      "02:00 PM",
-      "04:00 PM"
-    ];
-
-    times.forEach(time => {
-      const option = document.createElement("option");
-      option.text = time;
-      option.value = time;
-      timeSelect.add(option);
-    });
-  }
-</script>
-
-</body>
-</html>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark">M</span><span class="brand-name">MAUMAU <small>PHOTOGRAPHY STUDIO</small></span></a>
+      <p>© <span id="year"></span> Maumau Photography Studio. All rights reserved.</p>
+      <a href="#top" class="back-top">BACK TO TOP ↑</a>
     </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="section" id="services">
-    <h2>Services</h2>
-
-    <div class="services">
-      <div class="card">Product Photography</div>
-      <div class="card">Corporate Headshots</div>
-      <div class="card">Fashion Editorial</div>
-      <div class="card">Food Photography</div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="section" id="work">
-    <h2>Selected Work</h2>
-
-    <div class="gallery">
-      <img src="https://picsum.photos/400?1">
-      <img src="https://picsum.photos/400?2">
-      <img src="https://picsum.photos/400?3">
-      <img src="https://picsum.photos/400?4">
-      <img src="c:\Users\magor\Downloads\Screenshot 2026-02-07 135125.png">
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <div class="contact-info">
-  <h2>Contact Us</h2>
-
-  <p>
-    📞 Phone:
-    <a href="tel:+254706398452">+254 706 398 452</a>
-  </p>
-
-  <p>
-    ✉️ Email:
-    <a href="mailto:info@example.com">magorejoel2000@gmail.com</a>
-  </p>
-</div>
-
-
-  <footer>
-    © 2026 Maumau Photography Studio
   </footer>
-
-  <!-- JS Link -->
   <script src="script.js"></script>
 </body>
 </html>
